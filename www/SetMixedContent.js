@@ -15,7 +15,7 @@ var MixedContentMode = function() {
  */
 MixedContentMode.prototype.setMixedContentMode = function (mode, success, error) {
     if(this.isValidMode(mode)){
-        exec(success, error, 'setMixedContentMode', 'setMixedContentMode', [mode.toLowerCase()]);
+        exec(success, error, 'SetMixedContent', 'setMixedContentMode', [mode.toLowerCase()]);
     } else {
         throw new Error("Invalid mixed content mode. Valid modes are: 'always_allow', 'compatibility_mode', 'never_allow'");
     }
