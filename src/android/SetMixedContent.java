@@ -1,4 +1,4 @@
-package com.reach.SetMixedContent;
+package com.reach;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
