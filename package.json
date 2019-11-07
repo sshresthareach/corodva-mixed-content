@@ -1,0 +1,25 @@
+{
+  "name": "cordova-mixed-content",
+  "version": "0.0.1",
+  "description": "Set mixed content policy",
+  "cordova": {
+    "id": "cordova-mixed-content",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sshresthareach/corodva-mixed-content.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Shubha Shrestha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sshresthareach/corodva-mixed-content/issues"
+  },
+  "homepage": "https://github.com/sshresthareach/corodva-mixed-content#readme"
+}
