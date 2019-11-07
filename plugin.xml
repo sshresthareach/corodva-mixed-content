@@ -16,7 +16,6 @@
                 <param name="android-package" value="com.reach.SetMixedContent" />
             </feature>
         </config-file>
-        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
-        <source-file src="src/android/SetMixedContent.java" target-dir="src/com/reach/SetMixedContent" />
+        <source-file src="src/android/SetMixedContent.java" target-dir="src/com/reach" />
     </platform>
 </plugin>
