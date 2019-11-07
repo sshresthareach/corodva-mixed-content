@@ -7,6 +7,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.util.Log;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.app.Activity;
@@ -30,14 +31,17 @@ public class SetMixedContent extends CordovaPlugin {
     private boolean setMixedContentMode(String contentMode, CallbackContext callbackContext) {
 		class ViewSetMixedContentMode implements Runnable {
 			CordovaWebView webView;
+			int settingsMode;
 
 			ViewSetMixedContentMode(CordovaWebView paramView, int mode) {
 				webView = paramView;
+				settingsMode = mode;
 			}
 
 			public void run() {
 				WebView view = (WebView) this.webView.getView();
-				view.getSettings().setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
+				view.getSettings().setMixedContentMode(settingsMode);
+				Log.d("*****SETCONTENTMODE****", "Setting mixed content mode." + settingsMode);
 			}
 		}
 
