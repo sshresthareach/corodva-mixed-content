@@ -41,7 +41,7 @@ public class SetMixedContent extends CordovaPlugin {
 			public void run() {
 				WebView view = (WebView) this.webView.getView();
 				view.getSettings().setMixedContentMode(settingsMode);
-				Log.d("*****SETCONTENTMODE****", "Setting mixed content mode." + settingsMode);
+				Log.d("REACHLog", "Setting mixed content mode." + settingsMode);
 			}
 		}
 
